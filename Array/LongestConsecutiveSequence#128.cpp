@@ -5,7 +5,7 @@
 using namespace std;
 
 // Note that the logic is not O(n) complexity as expected in the problem
-// statement. The Result actually beat the 99.2% of submissions.
+// statement. The Result actually beat the 99.92% of submissions.
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
