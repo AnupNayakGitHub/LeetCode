@@ -2,7 +2,7 @@
 #include<vector>
 #include<queue>
 using namespace std;
-
+//Node structure changed little bit to easily create test data
 struct TreeNode {
     int val;
     TreeNode *left;
