@@ -16,12 +16,13 @@ public:
         vector<int> res;
         if (root == nullptr) return res;
 
-        TreeNode* curr = root;
+        auto* curr = root;
         while(curr != nullptr) {
           //cout << "Current " << curr->val << "\n";
           if(curr->left != nullptr) {
             //go to the right most on the left branch and set he pointer
-            TreeNode* rightmost = curr->left;
+            // or break the pointer move to the right branch
+            auto* rightmost = curr->left;
             while((rightmost->right != nullptr)&&(rightmost->right != curr)) {
               rightmost = rightmost->right;
             }
